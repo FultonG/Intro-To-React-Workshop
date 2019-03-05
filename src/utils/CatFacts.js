@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export default {
     getFacts: function(){
-        return axios.get("https://thingproxy.freeboard.io/fetch/https://cat-fact.herokuapp.com/facts");
+        //if running locally use https://thingproxy.freeboard.io/fetch/ before the url
+        return axios.get("https://cat-fact.herokuapp.com/facts");
     }
 }
